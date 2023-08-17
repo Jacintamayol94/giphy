@@ -2,6 +2,7 @@ import React, { Component } from 'react'
 import './appGIF.css'
 import NavBar from './components/NavBar'
 import Gif from './components/Gif'
+import Contador from './components/Contador'
 
 
 class App extends Component {
@@ -73,10 +74,7 @@ class App extends Component {
 
         {contenido}
 
-      
-        <button onClick={() => this.traerTrendingGifs()}>Random Gif!</button>
-
-
+        <Contador valorInicial = {0}/>
 
       </>
     )
